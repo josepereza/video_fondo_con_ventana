@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+        .titulo {
+            animation-duration: 3s;
+            text-align: center;
+            color: antiquewhite;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            
+        }
+
+        .intro {
+
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border: 10px solid #f1f1f1;
+
+            z-index: 2;
+
+            padding: 20px;
+            text-align: center;
+        }
+
+        .intro3 {
+
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border: 10px solid #f1f1f1;
+
+            z-index: 2;
+
+            padding: 20px;
+            text-align: center;
+            animation-delay: 2s;
+
+        }
+
+        .container1 {
+
+            display: flex;
+            flex-direction: column;
+          
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            align-items: center;
+
+
+
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+        }
+        #fondo 
+            {
+                width: 60%;
+                height: 300px;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+  background-image: url("suiza.jpg");
+  background-attachment: fixed;
+  z-index: 2;
+  color:white;
+  text-align: center;
+
+        }
+        #intro2 {
+            z-index:2;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <video autoplay muted id="myVideo" playsinline>
+        <source src="grb_2.mp4" type="video/mp4">
+    </video>
+    <div class="container1">
+        
+        <h1 id="titulo" class="titulo animated zoomIn"style="visibility: hidden" >Example</h1>
+        <div class="intro">
+            <h2>Fullscreen with JavaScript</h2>
+            <p>Click on the "Open Fullscreen".
+                "Esc" key on your keyboard, or with the "Close Fullscreen" button.</p>
+
+            <button onclick="openFullscreen();">Open Fullscreen</button>
+            <button onclick="closeFullscreen();">Close Fullscreen</button>
+            <button id="pulsar">Pulsa aqui</button>
+        </div>
+        <div id="intro3" class="intro3 animated rollIn" style="visibility: hidden">
+
+            <h3 >
+                MI PROGRAMA
+            </h3>
+        </div>
+        <div id="intro4" class="intro4" style="visibility:hidden; color:white; z-index:2">
+            <h2 class="animated rollIn">ENTRAR</h2>
+        </div>
+        <div id="fondo">
+            <h3>MI IMAGEN DE FONDO</h3>
+         </div>
+         <div id="intro2">
+            <h2>CONTENIDO EXTRA</h2>
+            <p>
+                eslto ekj sl joe lo jaslfj lwe ofj osdflkjwer oiwj lsdafsdfs
+                sfs sj flsaj ljsal fjsal jlsjejo jsdlj ls 
+                l sajflsjalf welj fsjflj ifnwaelnenowe lnenos sfsaf 
+                sf  basabsaae 
+                esd fsbae
+                eslto ekj sl joe lo jaslfj lwe ofj osdflkjwer oiwj lsdafsdfs
+                sfs sj flsaj ljsal fjsal jlsjejo jsdlj ls 
+                l sajflsjalf welj fsjflj ifnwaelnenowe lnenos sfsaf 
+                sf  basabsaae 
+                esd fsbae
+                eslto ekj sl joe lo jaslfj lwe ofj osdflkjwer oiwj lsdafsdfs
+                sfs sj flsaj ljsal fjsal jlsjejo jsdlj ls 
+                l sajflsjalf welj fsjflj ifnwaelnenowe lnenos sfsaf 
+                sf  basabsaae 
+                esd fsbae
+                eslto ekj sl joe lo jaslfj lwe ofj osdflkjwer oiwj lsdafsdfs
+                sfs sj flsaj ljsal fjsal jlsjejo jsdlj ls 
+                l sajflsjalf welj fsjflj ifnwaelnenowe lnenos sfsaf 
+                sf  basabsaae 
+                esd fsbae
+                eslto ekj sl joe lo jaslfj lwe ofj osdflkjwer oiwj lsdafsdfs
+                sfs sj flsaj ljsal fjsal jlsjejo jsdlj ls 
+                l sajflsjalf welj fsjflj ifnwaelnenowe lnenos sfsaf 
+                sf  basabsaae 
+                esd fsbae
+                eslto ekj sl joe lo jaslfj lwe ofj osdflkjwer oiwj lsdafsdfs
+                sfs sj flsaj ljsal fjsal jlsjejo jsdlj ls 
+                l sajflsjalf welj fsjflj ifnwaelnenowe lnenos sfsaf 
+                sf  basabsaae 
+                esd fsbae
+                eslto ekj sl joe lo jaslfj lwe ofj osdflkjwer oiwj lsdafsdfs
+                sfs sj flsaj ljsal fjsal jlsjejo jsdlj ls 
+                l sajflsjalf welj fsjflj ifnwaelnenowe lnenos sfsaf 
+                sf  basabsaae 
+                esd fsbae
+                eslto ekj sl joe lo jaslfj lwe ofj osdflkjwer oiwj lsdafsdfs
+                sfs sj flsaj ljsal fjsal jlsjejo jsdlj ls 
+                l sajflsjalf welj fsjflj ifnwaelnenowe lnenos sfsaf 
+                sf  basabsaae 
+                esd fsbae
+            </p>
+         </div>
+    </div>
+
+
+
+    <script>
+        // window.addEventListener("load", pantalla, false);
+
+
+        
+        function titulo() {
+
+document.getElementById('titulo').style.visibility = 'visible';
+}
+
+
+        function intro3() {
+
+            document.getElementById('intro3').style.visibility = 'visible';
+        }
+
+       
+        function intro4() {
+            document.getElementById('intro4').style.visibility='visible';
+        }  
+      
+let promesa = (()=>{
+    
+    return new Promise((resolve, reject) => {
+        titulo();
+        resolve('ok');
+})
+  
+} )
+let promesa3 = (()=>{
+    return new Promise((resolve, reject) => {
+      setTimeout(()=> resolve (intro3()),2000);
+      
+})
+  
+} )
+let promesa4 = (()=>{
+    return new Promise((resolve, reject) => {
+      setTimeout(()=> resolve(intro4()),2000);
+      
+      })
+  
+} )
+
+    promesa().then(function(res){
+     
+      return promesa3()
+    }).then(function(res){
+     
+     return  promesa4()
+    }).then(function(res){
+        
+    }).then(function(res){
+        
+    })
+
+        function openFullscreen() {
+
+            var elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+                /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+                /* Chrome, Safari & Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+
+        function closeFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        }
+
+
+        document.getElementById('pulsar').addEventListener('click', openFullscreen, false);
+
+    </script>
+</body>
+
+</html>
